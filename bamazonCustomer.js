@@ -50,9 +50,9 @@ choices: function() {
         }
     ])
       .then(function(answer) {
-          var newItems
+          var newItems;
           for (var i = 0; i< results.length; i++) {
-              if (results[i].product_name === answer.choices) {
+              if (results[i].product_name === answer.question) {
                   newItems = results[i];
               }
           }
